@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "snippets": [
+    {"id":"hello","title":"Friendly greeting","trigger":";hello","text":"Hello, thank you for reaching out."},
+    {"id":"evidence","title":"Evidence first","trigger":";proof","text":"Separate observed facts, inferences and unknowns. Test the most consequential assumption. Never invent access, tests or completion."},
+    {"id":"build","title":"Build and verify","trigger":";build","text":"Inspect the actual artifacts. Establish a baseline. Make a reversible improvement. Run the relevant tests and deliver the complete result with evidence and remaining limits."}
+  ]
+}

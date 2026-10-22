@@ -1,0 +1,13 @@
+.build/
+.swiftpm/
+.DS_Store
+*.xcuserstate
+.env
+.env.*
+*.pem
+*.p12
+*.key
+*.mobileprovision
+local-data/
+private/
+agent-runs/

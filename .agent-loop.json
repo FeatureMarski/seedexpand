@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "repository": "FeatureMarski/seedexpand",
+  "max_concurrent_workers": 1,
+  "max_implementation_passes_per_task": 6,
+  "max_cloud_task_launches": 3,
+  "stop_after_consecutive_no_progress_passes": 2,
+  "allow_auto_merge": false,
+  "allow_public_binary_release": false,
+  "allow_billing_changes": false,
+  "allow_local_service_changes": false,
+  "allow_private_user_data_in_repository": false,
+  "acceptance_command": "./scripts/verify.sh",
+  "deliverable": "One reviewable native macOS app pull request with evidence",
+  "note": "This file is policy, not a running daemon. Actual task IDs and states must be recorded separately."
+}

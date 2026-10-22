@@ -1,0 +1,11 @@
+Build SeedExpand in FeatureMarski/seedexpand. Read AGENTS.md, docs/BUILD_BRIEF.md, SECURITY.md and .agent-loop.json, inspect the actual repository and run ./scripts/verify.sh before changing it.
+
+Deliver a real native macOS menu-bar text expander, not a proposal, mock dashboard or browser-only demonstration. Use the existing tested Swift core. Make shortcut creation, preview, search, expansion, pause and portable export simple. Add explicit ordered prompt-block composition without requiring an AI service. Protect privacy and user text before optimizing speed. No account, subscription, telemetry, shell snippets, raw typing logs or screen-recording permission.
+
+Work on one feature branch and one draft pull request. Run at most six evidence-driven implementation/review passes: identify the limiting behavior, predict a falsifying test, implement a coherent improvement, attack its boundaries, repair and verify, then record evidence. Each pass must change the result or reduce material uncertainty. Stop after two consecutive no-progress passes or a real access, quota, billing or platform-validation blocker. Do not spawn workers, change budgets, auto-merge or release binaries.
+
+Implement the first complete native slice from the build brief: editor, validated private persistence, permission onboarding, safe insertion policy, focus/secure-field handling, pause and exclusions, packaging and diagnostics. Preserve existing tests and add tests for new behavior. Apple plist export is a user-import route, not a claim that an iPhone app can silently rewrite system keyboard replacements. Measure actual latency/resource use when a suitable platform is available; otherwise label those checks unperformed.
+
+Preserve the MIT license. Use only original code and synthetic examples. Prepare a discreet optional donation path, but do not invent an account, enable an unverified payment URL or submit financial/identity forms. The software must remain useful without donations.
+
+Finish with complete files, actual test results, build/install/uninstall instructions, a platform-validation matrix, a reviewed diff and a draft PR. No private source imports, permission workarounds, fabricated compatibility or fake completion. The objective is a smaller, trustworthy writing tool that gets out of the way.
