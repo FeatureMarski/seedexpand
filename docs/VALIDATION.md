@@ -80,3 +80,11 @@ minimum; it has not been runtime validated.
 - AX plain-value replacement may change formatting/caret/undo behavior. No
   automatic rollback or undo is attempted. The adapter intentionally abstains
   in many custom/rich editors. Manual Copy remains useful without monitoring.
+
+## Independent coordinator verification, 2026-10-22 UTC
+
+- GitHub Actions macOS 14 arm64, Apple Swift 5.10: [run 39728464156](https://github.com/FeatureMarski/seedexpand/actions/runs/39728464156) passed. All 37 XCTest cases passed (32 original core tests plus five new native-policy/storage tests); CLI validation, Apple plist roundtrip and existing-output overwrite refusal also passed. This is verification of the library, policies and CLI only.
+- The current workflow does not compile the `SeedExpandApp` executable target. Do not describe this CI result as a successful native app build.
+- Coordinator direct macOS `swift build --jobs 1 --product SeedExpandApp` within the existing resource gate failed before compilation: `Unknown error parsing property list` from XCBuild initialization.
+- Direct `swiftc` compilation of the `SeedExpandCore` module succeeded with target `arm64-apple-macosx13.0`. Direct app typecheck did not complete because the local SwiftUI `@State` macro implementation `SwiftUIMacros.StateMacro` plugin was unavailable. This is a local toolchain limitation, not proof the app source does or does not compile on supported Xcode.
+- Native target compilation, linking, packaging, user-visible interface and real keyboard/Accessibility insertion are still unverified. No app was launched or permissions activated. The draft PR remains review-only.

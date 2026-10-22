@@ -143,3 +143,9 @@ No release, merge or runtime validation is claimed here.
 Final rerun after the missing-file adjustment: Swift syntax parse, shell syntax
 and `git diff --check` each exited 0. Native compile/link, updated XCTest execution
 and all interactive checks remain pending. No compiler process was left running.
+
+## Coordinator verification after the second attempt, 2026-10-22 UTC
+
+A GitHub draft PR was opened for the reviewed source. GitHub macOS 14 CI run 39728464156 completed successfully with 37 tests, zero failures, and all CLI verification stages passing. The CI workflow covers core and CLI, not native app compilation. Explicitly staged original project files were inspected, syntax checked, whitespace checked, and screened for obvious sensitive text before publication; no private diagnostics or agent-runs were included.
+
+Coordinator's native SwiftPM build failed during XCBuild initialization with `Unknown error parsing property list`. Direct `swiftc` compiled the core module when its macOS 13 target was specified; app typechecking was blocked by a missing local SwiftUI macro plugin. No permission bypass, Xcode installation, system-setting changes, app launch, or alternate workers were attempted. Native compilation, packaging and interactive validation remain blocked pending a supported toolchain. This evidence supersedes earlier 'tests not run' status for the expanded core/policy suite, but does not establish native-app readiness.
