@@ -11,3 +11,5 @@
 local-data/
 private/
 agent-runs/
+
+dist/
